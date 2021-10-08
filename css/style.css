@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', 'Roboto', 'Kaushan Script', sans-serif;
+}
+.container {
+    width: 1210px;
+    margin: 0 auto;
+}
+.header {
+    margin-top: 30px;
+    width: 100%;
+}
+.navigation {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 30px;
+    color: #95E1D3;
+    font-weight: bold;
+}
+.menu {
+    list-style-type: none;
+}
+.menu_li {
+    display: inline-block;
+    padding-left: 55px;
+}
+.menu_li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #95E1D3;
+
+}
+.menu_li a:hover {
+    color: #F38181;
+    transition-duration: 200ms;
+    position: relative;
+}
+.menu_li a:hover:after {
+    content: '';
+    width: 100%;
+    display: block;
+    height: 4px;
+    background-color: #F38181;
+    margin-top: 10px;
+    transition-duration: 200ms;
+    position: absolute;
+}
+
+.amazing_services {
+    margin-top: 110px;
+}
+.title {
+    font-family: "Kaushan Script", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+}
+.name {
+    padding-top: 22px;
+    font-family: "Montserrat Bold", sans-serif;
+    font-size: 30px;
+    color: #333333;
+    text-transform: uppercase;
+    text-align: center;
+}
+.name:after {
+    content: '';
+    display: block;
+    width: 62px;
+    height: 4px;
+    background-color: #F38181;
+    position: absolute;
+    margin-left: 570px ;
+    margin-top: 40px;
+}
+
+
+.services {
+    margin-top: 40px;
+}
+.list_services {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.type_service {
+    width: 320px;
+    padding: 70px 40px;
+
+}
+.icon_service {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: -65px;
+}
+.service_name{
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+.service_description {
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    padding-top: 15px;
+}
+
+.who_we_are {
+    margin-top: 60px;
+}
+.who_we_are_description {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Roboto-Regular', sans-serif;
+    font-size: 15px;
+    color: #999999;
+    padding-top: 90px;
+}
+.our_team {
+    margin-top: 90px;
+}
+.card {
+    width: 350px;
+    height: 510px;
+    position: relative;
+    display: inline-block;
+    margin-left: 35px;
+}
+.card_top {
+    height: 440px;
+    text-align: center;
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.card_image {
+    width: 100%;
+    height: 100%;
+}
+.name_employee {
+    color: #333333;
+    text-transform: uppercase;
+    padding-top: 25px;
+}
+.position {
+    color: #999999;
+    font-style: italic;
+    padding-top: 10px;
+}
+.card_overlay {
+    width: 350px;
+    height: 440px;
+    display: none;
+    background: linear-gradient(180deg, rgba(223, 118, 0, 0.8) 34%, rgba(235, 247, 31, 0.8));
+    box-shadow:9px 9px 0 0 rgba(149, 225, 211, 1);
+    position: absolute;
+    top:0;
+    left: 0;
+}
+.card:hover .card_overlay {
+    display: flex;
+    transition-duration: 200ms;
+}
+.cards_icon_block {
+    display: flex;
+    flex-direction:row;
+    margin: 190px auto;
+    width: 220px;
+    height: 55px;
+}
+.card_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55px;
+    height: 55px;
+    background-color: #FCE38A;
+    margin-right: 1px;
+}
+.card_icon:hover {
+    background-color: #95E1D3;
+    transition-duration: 200ms;
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+.footer_bar {
+    width: 1190px;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+.footer_bar:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: block;
+    background-color: rgba(153, 153, 153, 0.5);
+    position: absolute;
+    margin-top: -15px;
+}
+.info {
+    font-family: 'Montserrat-Regular', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    padding-top: 15px;
+}
+.info_link {
+    color: #F38181;
+    text-decoration: none;
+}
+.mail {
+    display: flex;
+    flex-direction: row;
+}
+.input_mail {
+    width: 230px;
+    height: 40px;
+    border: 1px solid rgba(153, 153, 153, 0.5);
+    border-right: none;
+    padding-left: 10px;
+    font-size: 15px;
+
+}
+.input_mail::placeholder {
+    color: #999999;
+    font-style: italic;
+}
+
+.mail_button {
+    display: block;
+    width: 150px;
+    height: 40px;
+    background-color: #95E1D3;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    padding-top: 10px;
+}
